@@ -29,8 +29,8 @@ The **Gemini Health App** is a Streamlit-powered web application that uses **Goo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YogiHalagunaki/MS_REST_API_emailgraph.git
-cd MS_REST_API_emailgraph  # or the correct path to your health app
+git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
+cd Gemini Health App  # or the correct path to your health app
 ```
 ### 2. Create a virtual environment (optional but recommended)
 ```bash
