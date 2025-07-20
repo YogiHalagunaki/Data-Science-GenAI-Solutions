@@ -150,7 +150,10 @@ uvicorn main:app --reload
 ```
 ---
 
-## 👤 Author
-Yogi Halagunaki
+## 🙋 Author
+
+**Yogi Halagunaki**
 Built using Azure AI, OCR, and Python.
-GitHub: github.com/yogi-halagunaki
+GitHub: [@YogiHalagunaki](https://github.com/YogiHalagunaki)  
+Email: halagunakiyogi@gmil.com  
+Location: India 
