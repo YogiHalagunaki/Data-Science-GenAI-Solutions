@@ -7,7 +7,7 @@ SmartDocument AI is a powerful Fast API service that processes various types of 
 ## 🌟 Key Features
 
 - 📸 **OCR**: Extracts text from scanned PDFs, JPEG, PNG using Azure Read API  
-- 🤖 **LLM-based Parsing**: Uses Azure OpenAI GPT to extract line items, vendor, dates, amounts  
+- 🤖 **LLM-based Parsing**: Uses Azure OpenAI GPT to extract line items.
 - 📁 **Output Formats**: JSON and XLSX  
 - ☁️ **Cloud Integration**:  
   - MongoDB for storing processed data  
