@@ -2,13 +2,12 @@ import os
 import json
 import asyncio
 import aiohttp
-from unidecode import unidecode
-
-from model.model import OpenAI_Extract
 from utils import config
 from utils.config import logger
+from unidecode import unidecode
 import utils.aws_services as aws
 
+from model.model import OpenAI_Extract
 async def delete_file(file_path):
     os.remove(file_path)
 async def post_process_sanitization(self, response):
