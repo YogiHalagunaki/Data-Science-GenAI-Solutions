@@ -152,8 +152,8 @@ uvicorn main:app --reload
 
 ## 🙋 Author
 
-**Yogi Halagunaki**
-Built using Azure AI, OCR, and Python.
+**Yogi Halagunaki**  
 GitHub: [@YogiHalagunaki](https://github.com/YogiHalagunaki)  
 Email: halagunakiyogi@gmil.com  
 Location: India 
+
