@@ -1,6 +1,6 @@
 # 🧾 SmartDocument AI — Bill & Receipt Digitization API
 
-SmartReceipt AI is a powerful Fast API service that processes various types of scanned receipts and bills (e.g. hotel, bus, train, flight, food, cab, etc.) and transforms them into structured digital formats (JSON & Excel). It uses **Azure Cognitive Services OCR**, **Azure OpenAI LLM**, and integrates with **MongoDB** and **AWS S3** for full pipeline automation.
+SmartDocument AI is a powerful Fast API service that processes various types of scanned receipts and bills (e.g. hotel, bus, train, flight, food, cab, etc.) and transforms them into structured digital formats (JSON & Excel). It uses **Azure Cognitive Services OCR**, **Azure OpenAI LLM**, and integrates with **MongoDB** and **AWS S3** for full pipeline automation.
 
 ---
 
@@ -32,15 +32,15 @@ SmartReceipt AI is a powerful Fast API service that processes various types of s
 
 * Backend:
 
-Calls get_ocr_output() for OCR.
+  * Calls get_ocr_output() for OCR.
 
-Sends OCR text to Azure OpenAI LLM.
+  * Sends OCR text to Azure OpenAI LLM.
 
-Parses structured data.
+  * Parses structured data.
 
-Stores structured result in MongoDB.
+  * Stores structured result in MongoDB.
 
-Uploads original & structured data to S3.
+  * Uploads original & structured data to S3.
 
 * API responds with JSON + Excel download link.
 ---
