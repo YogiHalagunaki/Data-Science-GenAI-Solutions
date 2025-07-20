@@ -9,7 +9,6 @@ from utils.access_secrets import AccessSecrets
 
 try:
     # loop = asyncio.get_event_loop()
-
     vault_url = os.environ["vault_url"]
     client_id_managed_identity = os.environ["client_id_managed_identity"]
 
