@@ -10,7 +10,7 @@ SmartDocument AI is a powerful Fast API service that processes various types of 
 - 🤖 **LLM-based Parsing**: Uses Azure OpenAI GPT to extract line items, vendor, dates, amounts  
 - 📁 **Output Formats**: JSON and XLSX  
 - ☁️ **Cloud Integration**:  
-  - MongoDB for storing structured data  
+  - MongoDB for storing processed data  
   - S3 for storing original files and digital outputs  
 
 ---
