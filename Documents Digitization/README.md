@@ -82,20 +82,22 @@ async def get_ocr_output(self, input_file, session):
 ---
 
 ## 🧠 LLM Model Configuration
-    ```python
+```python
 from langchain.chat_models import AzureOpenAI
+import os
 
+# Load model name from environment or use default
 llm_model_name = os.getenv("llm_model_name", "azure/gpt-35-turbo-16k")
-    
 
+# Initialize Azure OpenAI chat model
 llm = AzureOpenAI(
     engine=llm_model_name,
     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
     azure_endpoint=os.getenv("AZURE_OPENAI_API_BASE"),
     api_version=os.getenv("AZURE_OPENAI_API_VERSION")
 )
-```
 
+```
 ---
 
 ## 📤 Sample Output
