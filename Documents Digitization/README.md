@@ -135,7 +135,7 @@ llm = AzureOpenAI(
 ## 🛠 Installation
 ```bash 
 # Clone the repo
-git lone https://github.com/YogiHalagunaki/Documents Digitization.git
+git lone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
 cd Documents Digitization
 
 # Install dependencies

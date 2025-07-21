@@ -43,7 +43,7 @@ graph LR
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YogiHalagunaki/AFR_using_LLM.git
+git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
 cd AFR_using_LLM
 ```
 ### 2. Set Up Virtual Environment
