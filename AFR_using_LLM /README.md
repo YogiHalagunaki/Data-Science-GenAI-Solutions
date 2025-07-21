@@ -70,7 +70,7 @@ AZURE_API_VERSION=2024-02-15-preview
 ## 📂 Folder Structure
 ```bash 
 .
-├── main.py                        # Main runner script
+├── pdf_image_table_extraction.py                        # Main runner script
 ├── output/
 │   └── <pdf_name>/
 │       ├── tables_extracted.json
