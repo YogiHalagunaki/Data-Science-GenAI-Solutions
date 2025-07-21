@@ -88,7 +88,6 @@ import os
 
 # Load model name from environment or use default
 llm_model_name = os.getenv("llm_model_name", "azure/gpt-35-turbo-16k")
-
 # Initialize Azure OpenAI chat model
 llm = AzureOpenAI(
     engine=llm_model_name,

@@ -1,29 +1,49 @@
 # Dockerfile
-FROM  /home/yogi/python:3.10-slim
+# Stage 1: Build
+FROM python:3.10.16-slim-bookworm AS build
+
+RUN useradd -ms /bin/bash 1000
 
 # copy source and install dependencies
 RUN mkdir -p /opt/Documents_Digitization_Process/app
+
 COPY requirements.txt start-server.sh /opt/Documents_Digitization_Process/
 COPY app /opt/Documents_Digitization_Process/app
 
 WORKDIR /opt/Documents_Digitization_Process
 
-RUN apt update -y && apt-get upgrade -y \
-    # && apt-get install nginx -y --no-install-recommends \
-    && python -m pip install --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt && pip cache purge \
+RUN apt-get update -y && apt-get upgrade -y \
+    && pip install --upgrade pip setuptools \
+    && apt-get -y install tesseract-ocr \
+    && apt-get purge -y curl \
+    && apt-get autoremove -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
-	&& chmod 777 -R /opt/Documents_Digitization_Process
+    && pip install --no-cache-dir -r requirements.txt \
+	&& pip cache purge
 
-# RUN rm /etc/apt/sources.list
-# RUN echo "deb http://archive.debian.org/debian-security jessie/updates main" > /etc/apt/sources.list.d/jessie.list
+RUN python3 -m compileall -b . /opt/Documents_Digitization_Process/app \
+    && find . -name "*.py" -type f -delete /opt/Documents_Digitization_Process/app/
 
-# setup nginx 
-# COPY nginx.default /etc/nginx/sites-available/default
+# Stage 2: Runtime
+FROM python:3.10.16-slim-bookworm
+
+RUN apt-get update -y && apt-get upgrade -y
+
+COPY --from=build /opt/Documents_Digitization_Process /opt/Documents_Digitization_Process
+
+COPY --from=build /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
+COPY --from=build /usr/local/bin /usr/local/bin
+
+RUN chmod 777 -R /opt/Documents_Digitization_Process \
+    && pip install --upgrade pip setuptools
+
+WORKDIR /opt/Documents_Digitization_Process
 
 # start server
-EXPOSE 80
-EXPOSE 8010
+EXPOSE 8080
 STOPSIGNAL SIGTERM
-CMD ["bash", "/opt/Documents_Digitization_Process/start-server.sh"]
+USER 1000
+
+ENTRYPOINT ["/bin/bash"]
+CMD ["/opt/Documents_Digitization_Process/start-server.sh"]
