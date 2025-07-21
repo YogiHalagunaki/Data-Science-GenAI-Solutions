@@ -1,0 +1,5 @@
+img2table
+img2table[azure]
+requests
+azure-ai-ml
+azure-ai-formrecognizer
