@@ -1,4 +1,4 @@
-# 📄 PDF/Image Table Extractor using Azure GPT-4 Omni (AFR)
+## 📄 PDF/Image Table Extractor using Azure GPT-4 Omni (AFR)
 
 This project extracts tables from **image-based PDFs** using **Azure OpenAI's GPT-4 Omni** model. The tables are identified from PDF pages as images and converted to **Markdown format**, then intelligently **merged** and saved into **Excel files**.
 
