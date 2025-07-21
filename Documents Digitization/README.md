@@ -135,7 +135,7 @@ llm = AzureOpenAI(
 ## 🛠 Installation
 ```bash 
 # Clone the repo
-git clone https://github.com/yourusername/smartreceipt-ai.git
+git lone https://github.com/YogiHalagunakismartreceipt-ai.git
 cd smartreceipt-ai
 
 # Install dependencies
