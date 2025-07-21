@@ -15,8 +15,6 @@ This project extracts tables from **image-based PDFs** using **Azure OpenAI's GP
 ---
 ## 🧠 Architecture Overview
 
-### 🧠 Architecture Overview
-
 ```mermaid
 graph LR
     A[PDF File] --> B[pdf_to_images]
