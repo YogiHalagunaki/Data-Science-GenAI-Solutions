@@ -15,14 +15,16 @@ This project extracts tables from **image-based PDFs** using **Azure OpenAI's GP
 ---
 ## 🧠 Architecture Overview
 
+### 🧠 Architecture Overview
+
 ```mermaid
 graph LR
     A[PDF File] --> B[pdf_to_images]
     B --> C[Image Conversion (PIL)]
-    C --> D[GPT-4 Omni Vision API]
+    C --> D[Azure GPT-4 Omni Vision]
     D --> E[Markdown Table Extraction]
     E --> F[merge_tables_with_llm]
-    F --> G[Final Markdown Tables]
+    F --> G[Final Merged Markdown Tables]
     G --> H[Excel Export (pandas + xlsxwriter)]
 ```
 ---
