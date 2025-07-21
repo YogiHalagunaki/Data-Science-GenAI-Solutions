@@ -135,8 +135,8 @@ llm = AzureOpenAI(
 ## 🛠 Installation
 ```bash 
 # Clone the repo
-git lone https://github.com/YogiHalagunakismartreceipt-ai.git
-cd smartreceipt-ai
+git lone https://github.com/YogiHalagunaki/Documents Digitization.git
+cd Documents Digitization
 
 # Install dependencies
 pip install -r requirements.txt
