@@ -144,8 +144,14 @@ pip install -r requirements.txt
 --- 
 
 ## 🧪 Running the API
+
 ```bash 
-uvicorn main:app --reload
+Server : 
+uvicorn run:app --reload
+
+OR
+Local Testing : 
+python3 test.py
 ```
 ---
 
