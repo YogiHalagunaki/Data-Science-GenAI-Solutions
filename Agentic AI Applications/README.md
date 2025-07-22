@@ -17,7 +17,7 @@ Powered by **Azure OpenAI GPT-4 Omni** and **LangGraph's agentic workflow framew
 
 ---
 
-## ⚙️ LangGraph Architecture
+## ⚙️ Multi-Agent Supervisor Workflow
 ```mermaid
 graph TD
     Start --> Supervisor
