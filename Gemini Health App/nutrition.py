@@ -69,9 +69,6 @@ if submit:
     st.header("The Response is")
     st.write(response)
 
-
-
-
 # import streamlit as st
 # import openai
 # import os
