@@ -48,8 +48,10 @@ pip install -r requirements.txt
 ### 3. Running the App
 ``` bash
 streamlit run translatorgpt.py
+
+Note :  Replace app.py with the actual filename of your script if different.
 ```
-Replace app.py with the actual filename of your script if different.
+
 ---
 
 ## 🙋 Author
