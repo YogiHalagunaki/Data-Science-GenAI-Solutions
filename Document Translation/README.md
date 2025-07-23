@@ -27,7 +27,7 @@ More languages can be added by extending the list in the selectbox.
 ## 🛠️ Requirements
 
 - Python 3.8+
-
+- googletrans (text translation)
 ---
 
 ## 📦 Installation
