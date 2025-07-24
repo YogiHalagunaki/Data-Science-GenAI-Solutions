@@ -91,9 +91,9 @@ llm_model_name = os.getenv("llm_model_name", "azure/gpt-35-turbo-16k")
 # Initialize Azure OpenAI chat model
 llm = AzureOpenAI(
     engine=llm_model_name,
-    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-    azure_endpoint=os.getenv("AZURE_OPENAI_API_BASE"),
-    api_version=os.getenv("AZURE_OPENAI_API_VERSION")
+    api_key=AZURE_OPENAI_API_KEY,
+    azure_endpoint=AZURE_OPENAI_API_BASE,
+    api_version=AZURE_OPENAI_API_VERSION
 )
 
 ```

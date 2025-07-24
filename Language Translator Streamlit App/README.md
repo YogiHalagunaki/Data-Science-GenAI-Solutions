@@ -56,7 +56,7 @@ The models follow a shared system prompt that:
 
 ```bash
 git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
-cd Language Translator Streamlit App  # or the correct path to your health app
+cd Language Translator Streamlit App  # or the correct path to your Language Translator app
 
 ```
 

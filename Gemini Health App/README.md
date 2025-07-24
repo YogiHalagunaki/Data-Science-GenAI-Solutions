@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ```
 ### 4. Setup Environment Variables and  Run the App
 ```bash
-streamlit run app.py
+streamlit run nutrition.py
 ```
 ---
 
