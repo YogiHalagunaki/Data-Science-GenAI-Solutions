@@ -57,11 +57,13 @@ The models follow a shared system prompt that:
 ```bash
 git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
 cd Language Translator Streamlit App  # or the correct path to your health app
+
 ```
 
 ### 2. Install Dependencies
 ```bash 
 pip install -r requirements.txt
+
 ```
 ### 3. Set Up .env
 ```env
@@ -74,6 +76,7 @@ GEMINI_API_KEY=your_gemini_key
 ## ▶️ Run the App
 ```bash 
 streamlit run streamlit_app.py
+
 ```
 
 ## 🙋 Author
