@@ -3,7 +3,6 @@ import json
 import httpx
 import shutil
 import asyncio
-import logging
 import uvicorn
 from pathlib import Path
 from llama_cpp import Llama
@@ -12,7 +11,7 @@ from pydantic import BaseModel, HttpUrl
 from typing import List, Optional, Dict, Any
 from fastapi.responses import StreamingResponse
 from concurrent.futures import ThreadPoolExecutor
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException
 
 from dotenv import load_dotenv
 from loguru import logger
