@@ -42,11 +42,13 @@ Handles the complete cleaning workflow including:
 - Numeric outlier detection with `scipy.stats.zscore`
 
 ### 2. LangGraph Workflow
-The cleaning process is defined as a graph pipeline:
+
+The cleaning process is defined as a directed graph:
+
 ```mermaid
 graph LR
-analyze → clean_countries → clean_addresses → clean_names → clean_numeric
-```
+  analyze --> clean_countries --> clean_addresses --> clean_names --> clean_numeric
+
 ---
 ## 🛠️ Setup Instructions
 
