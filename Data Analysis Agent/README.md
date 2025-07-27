@@ -48,7 +48,8 @@ The cleaning process is defined as a directed graph:
 ```mermaid
 graph LR
   analyze --> clean_countries --> clean_addresses --> clean_names --> clean_numeric
-
+  
+```
 ---
 ## 🛠️ Setup Instructions
 
