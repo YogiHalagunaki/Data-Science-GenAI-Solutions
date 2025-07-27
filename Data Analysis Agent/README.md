@@ -21,7 +21,7 @@ A modular and extensible Python-based agent for intelligent **data cleaning**, *
 
 ```bash
 .
-├── test.py # Test script for loading and cleaning sample data
+├── example_usage.py # Test script for loading and cleaning sample data
 ├── data_cleaning_agent.py# Core logic for data cleaning agent
 ├── .env # Environment variables for Azure OpenAI
 ├── cleaned_data.csv # Output file with cleaned data
