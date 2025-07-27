@@ -19,6 +19,7 @@ A modular and extensible Python-based agent for intelligent **data cleaning**, *
 
 ## 📁 Project Structure
 
+```plaintext
 .
 ├── test.py # Test script for loading and cleaning sample data
 ├── data_cleaning_agent.py# Core logic for data cleaning agent
@@ -26,6 +27,8 @@ A modular and extensible Python-based agent for intelligent **data cleaning**, *
 ├── cleaned_data.csv # Output file with cleaned data
 └── README.md # This file
 
+
+```
 ---
 
 ## 🧠 How It Works
