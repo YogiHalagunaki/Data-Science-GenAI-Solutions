@@ -48,7 +48,7 @@ The cleaning process is defined as a directed graph:
 ```mermaid
 graph LR
   analyze --> clean_countries --> clean_addresses --> clean_names --> clean_numeric
-  
+
 ```
 ---
 ## 🛠️ Setup Instructions
@@ -106,15 +106,15 @@ responce::::::::: Removed outliers from column: salary
 ## 🙌 Acknowledgments
 Built with:
 
-* LangGraph
+* `LangGraph`
 
-* Azure OpenAI
+* `Azure OpenAI`
 
-* pandas
+* `pandas`
 
-* scipy
+* `scipy`
 
-* fuzzywuzzy
+* `fuzzywuzzy`
 
 ```
 
