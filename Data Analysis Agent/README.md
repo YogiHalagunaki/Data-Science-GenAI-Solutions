@@ -117,7 +117,7 @@ Built with:
 - `fuzzywuzzy`
 
 ```
-
+---
 ## 🙋 Author
 
 **Yogi Halagunaki**  
