@@ -43,7 +43,9 @@ Handles the complete cleaning workflow including:
 
 ### 2. LangGraph Workflow
 The cleaning process is defined as a graph pipeline:
-
+```mermaid
+analyze → clean_countries → clean_addresses → clean_names → clean_numeric
+```
 ---
 ## 🛠️ Setup Instructions
 
