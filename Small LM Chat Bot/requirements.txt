@@ -1,0 +1,11 @@
+streamlit
+requests
+humanize
+fastapi
+uvicorn
+llama-cpp-python
+httpx
+python-multipart
+huggingface-hub
+typing-extensions
+python-dotenv
