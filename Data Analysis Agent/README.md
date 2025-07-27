@@ -106,15 +106,15 @@ responce::::::::: Removed outliers from column: salary
 ## 🙌 Acknowledgments
 Built with:
 
-* `LangGraph`
+- `LangGraph`
 
-* `Azure OpenAI`
+- `Azure OpenAI`
 
-* `pandas`
+- `pandas`
 
-* `scipy`
+- `scipy`
 
-* `fuzzywuzzy`
+- `fuzzywuzzy`
 
 ```
 
