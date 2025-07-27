@@ -116,7 +116,6 @@ Built with:
 
 - `fuzzywuzzy`
 
-```
 ---
 ## 🙋 Author
 
