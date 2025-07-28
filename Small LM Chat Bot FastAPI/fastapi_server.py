@@ -187,7 +187,6 @@ async def root():
         "version": "1.0.0"
     }
     
-    
 # API Endpoints
 @app.post("/models/download")
 async def download_model(request: DownloadModelRequest):
