@@ -36,20 +36,20 @@ The following models can be downloaded and used via the UI:
 
 ## 🔧 Installation
 
-### 1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
 cd Small LM Chat Bot Streamlit App  # or the correct path to your Chat Bot
 
 ```
-### 2. Create a virtual environment:
+### 2. Create a virtual environment
 ```bash 
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 ```
-### 3. Install dependencies:
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 
