@@ -124,6 +124,7 @@ test_chatBot("My name is Yogi. Can you help me write a formal leave application 
 ```text
 Yogi: "How many states are in India?"
 ChatBot: "India has 28 states and 8 Union Territories as of 2025."
+
 ```
 
 ---
