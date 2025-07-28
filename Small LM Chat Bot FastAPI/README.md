@@ -1,6 +1,5 @@
-# 🧠 Small LM Chatbot API
-    - FastAPI
-
+# 🧠 Small LM Chatbot FastAPI
+  
 This project provides a FastAPI-based interface for running Small Language Models (SLMs) like Qwen, LLaMA, and Gemma locally. You can download, load, chat with, unload, and delete models using simple REST API endpoints.
 
 ---
