@@ -1,4 +1,4 @@
-# 🧠 SLM Inference Streamlit UI
+# 🧠 SLM Inference Streamlit UI - Chat Bot
 
 A lightweight, interactive Streamlit-based UI to manage and chat with small language models (SLMs) running via a local inference API.
 
