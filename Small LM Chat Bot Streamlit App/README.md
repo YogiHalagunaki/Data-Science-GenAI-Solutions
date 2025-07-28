@@ -68,6 +68,32 @@ streamlit run streamlit_app.py
 
 Note :  Ensure your backend API is running at http://localhost:8000.
 ```
+
+## 💡 Output Chat
+```text
+que :  My name is Yogi. Can you help me write a formal leave application for my office?
+
+Bot responce:
+
+Subject: Leave Application for [Type of Leave] from [Start Date] to [End Date]
+
+Dear [Manager's Name],
+
+I hope this message finds you well.
+
+I am writing to formally request leave from work starting from [Start Date] to [End Date] due to [brief reason, e.g., personal reasons / medical grounds / a family function / travel plans]. I will ensure that all my responsibilities are either completed in advance or appropriately delegated to avoid any disruption during my absence.
+
+Please let me know if any additional information or formalities are required. I will be reachable via email/phone in case of any urgent matters.
+
+I kindly request you to consider my application and grant me leave for the mentioned duration.
+
+Thank you for your understanding and support.
+
+Sincerely,
+Yogi Halagunaki
+[Your Designation]
+[Your Contact Information]
+```
 ---
 ## 🙋 Author
 
