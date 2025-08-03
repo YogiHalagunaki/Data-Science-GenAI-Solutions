@@ -173,6 +173,12 @@ structured_output_agent.print_response("extract info ControlEvaluations")
 
 ---
 ## 🙌 Acknowledgments
+* Google Gemini API
+
+* ColPali Vision-Language Model
+
+* LlamaIndex
+
 * Phi Framework
 
 * Anthropic Claude
