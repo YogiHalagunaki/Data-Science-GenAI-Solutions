@@ -1,6 +1,6 @@
 # [A] Async MultiModal RAG with ColPali and Gemini
 
-This project implements an **Asynchronous MultiModal Retrieval-Augmented Generation (RAG)** system that combines **ColPali** (a vision-language model) and **Gemini Pro Vision** (via Google's API) to extract insights from PDFs using a multimodal document processing pipeline.
+This project implements an **Asynchronous MultiModal Retrieval-Augmented Generation (RAG)** system that combines **ColPali** (a vision-language model-VLM) and **Gemini Pro Vision** (via Google's API) to extract insights from PDFs using a multimodal document processing pipeline.
 
 ---
 
