@@ -182,4 +182,10 @@ structured_output_agent.print_response("extract info ControlEvaluations")
 * LanceDB
 
 ---
+## 🙋 Author
+
+**Yogi Halagunaki**  
+GitHub: [@YogiHalagunaki](https://github.com/YogiHalagunaki)  
+Email: halagunakiyogi@gmil.com  
+Location: India 
 
