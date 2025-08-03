@@ -1,0 +1,12 @@
+torch
+pdf2image
+Pillow
+llama-index
+colpali-engine
+loguru
+python-dotenv
+phi-lang
+pydantic
+lancedb
+anthropic
+openai
