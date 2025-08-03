@@ -187,6 +187,12 @@ structured_output_agent.print_response("extract info ControlEvaluations")
 
 * LanceDB
 
+- [Phi Framework](https://github.com/phi-lang/phi) – Modular agent framework for building LLM-based workflows.
+- [Anthropic Claude](https://www.anthropic.com/index/claude) – Powerful LLM by Anthropic used for reasoning and structured output.
+- [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview) – Azure-hosted access to OpenAI models like GPT-4, GPT-4o, and embeddings.
+- [LanceDB](https://lancedb.github.io/lancedb/) – Fast, local, vector database for semantic search.
+- [Gemini API (Google AI Studio)](https://ai.google.dev/) – Multi-modal LLMs from Google for processing text and images.
+
 ---
 ## 🙋 Author
 
