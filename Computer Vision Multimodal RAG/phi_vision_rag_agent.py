@@ -31,7 +31,7 @@ model=Claude(id="anthropic.claude-3-5-sonnet-20240620-v1:0")
 
 embedder=AzureOpenAIEmbedder(model="text-embedding-ada-002")
 
-# with open('./OCR_OUT/combined_ocr.json', 'r') as file:
+# with open('./home/yogi/Desktop/GenAI_Solutions/OCR_OUTPUT/test_ocr.json', 'r') as file:
 #     data = json.load(file)
 
 file_name="./home/yogi/Desktop/GenAI_Solutions/test.pdf"

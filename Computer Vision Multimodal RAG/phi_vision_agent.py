@@ -11,12 +11,10 @@ from phi.embedder.azure_openai import AzureOpenAIEmbedder
 from phi.document.chunking.agentic import AgenticChunking
 from phi.document.chunking.document import DocumentChunking
 
-
 from dotenv import load_dotenv
 load_dotenv()
 
 db_url = "./tmp/lancedb"
-
 
 # llm_model = "anthropic.claude-3-5-sonnet-20240620-v1:0"
 # llm_model="gpt-4-omni"
@@ -29,7 +27,6 @@ embedder=AzureOpenAIEmbedder(model="text-embedding-ada-002")
 with open('./home/yogi/Desktop/GenAI_Solutions/OCR_OUTPUT/test_ocr.json', 'r') as file:
     data = json.load(file)
     
-
 async def create_document(fact):
     return Document(content=fact)
 
@@ -54,10 +51,8 @@ knowledge_base = DocumentKnowledgeBase(
     num_documents=10,  # Number of documents to return on search
 )
 
-
 ## Comment out after first run
 # knowledge_base.load(recreate=False)
-
 
 agent = Agent(
     model=model,
@@ -66,7 +61,6 @@ agent = Agent(
     search_knowledge=True,
     # reasoning=True
 )
-
 
 question = """
 Existence   definition:
@@ -81,6 +75,4 @@ A list of authorized software is maintained by the orgnaisation so that they can
 /n Can you check Existence based on above information, just give yes or no with explanation nothing much,need citation from file name, if relvant info is present 
  """
  
-
-
 agent.print_response(question , markdown=True)
