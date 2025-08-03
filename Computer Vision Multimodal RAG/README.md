@@ -50,12 +50,12 @@ python3 -m venv venv
 source venv/bin/activat
 
 ```
-### 3. 
+### 3. Install Dependencies
 ```bash 
 pip install -r requirements.txt
 
 ```
-### 4.  Install System Dependencies
+### 4. Install System Dependencies
 ```bash 
 sudo apt install poppler-utils  # Required by pdf2image
 
