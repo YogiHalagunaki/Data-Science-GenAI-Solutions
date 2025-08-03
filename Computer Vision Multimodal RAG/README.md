@@ -79,7 +79,7 @@ Can you check if the control exists based on the PDF content?
 
 ```
 ---
-# [B] 🧠 Structured Document Control Evaluation with Phi, Claude, and OCR
+# [B] 🧠 Structured Document Control Evaluation with Phi, Claude, and OCR (Computer Vision)
 
 This project uses a **multi-agent LLM pipeline** built with the [Phi framework](https://github.com/phi-lang/phi) to extract structured control evaluation data from documents. It combines OCR processing, Claude/Gemini/Azure LLMs, vector-based retrieval, and pydantic models to generate clean, machine-readable outputs.
 
