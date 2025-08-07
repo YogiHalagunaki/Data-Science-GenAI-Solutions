@@ -41,7 +41,7 @@ test.pdf                     # Sample document to test with
 
 ```bash
 git lone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
-cd Computer Vision Multimodal RAG
+cd Vision Language Multimodal RAG
 
 ```
 ### 2. Create a Python Environment
@@ -79,7 +79,7 @@ Can you check if the control exists based on the PDF content?
 
 ```
 ---
-# [B] 🧠 Structured Document Control Evaluation with Phi, Claude, and OCR (Computer Vision)
+# [B] 🧠 Structured Document Control Evaluation with Phi, Claude, and OCR - Computer Vision
 
 This project uses a **multi-agent LLM pipeline** built with the [Phi framework](https://github.com/phi-lang/phi) to extract structured control evaluation data from documents. It combines OCR processing, Claude/Gemini/Azure LLMs, vector-based retrieval, and pydantic models to generate clean, machine-readable outputs.
 
@@ -114,7 +114,7 @@ This project uses a **multi-agent LLM pipeline** built with the [Phi framework](
 ### 1. Clone and Setup Environment
 ```bash
 git lone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
-cd Computer Vision Multimodal RAG
+cd Vision Language Multimodal RAG
 
 python3 -m venv venv
 source venv/bin/activate
