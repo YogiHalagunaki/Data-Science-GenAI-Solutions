@@ -65,7 +65,7 @@ HUGGINGFACE_TOKEN=your_hf_token_here
 
 ```bash
 git clone https://github.com/YogiHalagunaki/Data-Science-GenAI-Solutions.git
-cd Small LM Chat Bot FastAPI  # or the correct path to your Chat Bot
+cd Small LM Chat Bot FastAPI (Hugging Face)  # or the correct path to your Chat Bot
 
 ```
 
