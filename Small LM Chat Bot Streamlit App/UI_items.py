@@ -65,9 +65,9 @@ def create_header(heading):
             </div>
             <div class="user-info">
                 <div>Yogi Halagunaki</div>
-                <div>Analyst L1</div>
+                <div>Data Scientist</div>
             </div>
-            <div class="header-item user-avatar">ST</div>
+            <div class="header-item user-avatar">YH</div>
         </div>
     </div>
     """, unsafe_allow_html=True)

@@ -50,24 +50,24 @@ def create_header(heading):
     </style>
     """, unsafe_allow_html=True)
 
-    # Header content
+     # Header content
     st.markdown(f"""
     <div class="header">
         <div class="header-left">
-            <img src="data:image/png;base64,{get_image_base64("/home/yogi/Desktop/GenAI_Solutions/Images/backgroung.png")}" alt="AI 2025" width="180">
+            <img src="data:image/png;base64,{get_image_base64("Images/bot.png")}" alt="BOT" width="180">
         </div>
         <div class="header-center">
-            <h1 style="color: white; font-size: 44px; margin: 0;">{heading}</h1>
+            <h1 style="color: white; font-size: 34px; margin: 0;">{heading}</h1>
         </div>
         <div class="header-right">
             <div class="banner">
-                <img src="data:image/png;base64,{get_image_base64("/home/yogi/Desktop/GenAI_Solutions/Images/header.PNG")}" alt="Yogi" width="140">
+                <img src="data:image/png;base64,{get_image_base64("Images/preview.PNG")}" alt="BOT1" width="140">
             </div>
             <div class="user-info">
                 <div>Yogi Halagunaki</div>
-                <div>Data Scientist S1</div>
+                <div>Data Scientist</div>
             </div>
-            <div class="header-item user-avatar">YA</div>
+            <div class="header-item user-avatar">YH</div>
         </div>
     </div>
     """, unsafe_allow_html=True)

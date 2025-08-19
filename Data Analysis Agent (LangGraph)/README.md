@@ -1,6 +1,6 @@
 # Data Cleaning Agent
 
-A modular and extensible Python-based agent for intelligent **data cleaning**, **normalization**, and **preprocessing** of messy tabular data using custom logic and LLM-enhanced pipelines.
+A modular and extensible Python-based LangGraph workflow agent for intelligent **data cleaning**, **normalization**, and **preprocessing** of messy tabular data using custom logic and LLM-enhanced pipelines.
 
 ---
 
@@ -12,7 +12,7 @@ A modular and extensible Python-based agent for intelligent **data cleaning**, *
 - 🔢 Removes outliers from numeric columns using z-score
 - 🏢 Normalizes address formats with common replacements (e.g., "St." → "Street")
 - 📅 Flexible handling of inconsistent date formats (extendable)
-- 🤖 LLM-ready architecture via Azure OpenAI and `LangGraph` workflow engine
+- 🤖 LLM-ready architecture via `LangGraph` workflow engine
 - 📦 Easy CSV or Excel I/O
 
 ---
@@ -23,7 +23,7 @@ A modular and extensible Python-based agent for intelligent **data cleaning**, *
 .
 ├── example_usage.py # Test script for loading and cleaning sample data
 ├── data_cleaning_agent.py# Core logic for data cleaning agent
-├── .env # Environment variables for Azure OpenAI
+├── .env # Environment variables for Azure OpenAI # not used in the code
 ├── cleaned_data.csv # Output file with cleaned data
 └── README.md # This file
 
@@ -72,6 +72,7 @@ AZURE_OPENAI_API_KEY=your_key_here
 AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
 AZURE_OPENAI_API_VERSION=2024-XX-XX
 
+Note : this is not used in the code  
 ```
 ### 4. Run the Sample Cleaning Script
 ```bash

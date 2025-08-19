@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 from fuzzywuzzy import fuzz
-from openai import AzureOpenAI
 from dotenv import load_dotenv
 from langgraph.graph import Graph
 from typing import List, Dict, Any
@@ -21,13 +20,6 @@ class AgentState(TypedDict):
 
 class DataCleaningAgent:
     def __init__(self):
-        # Initialize Azure OpenAI client
-        self.client = AzureOpenAI(
-            api_key="AZURE_OPENAI_API_KEY",
-            azure_endpoint="AZURE_OPENAI_ENDPOINT",
-            api_version="AZURE_OPENAI_API_VERSION"
-        )
-        
         # Initialize country codes
         self.country_codes = {country.name: country.alpha_3 
                             for country in pycountry.countries}

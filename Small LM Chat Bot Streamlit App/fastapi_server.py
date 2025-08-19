@@ -177,7 +177,6 @@ async def download_model_to_local(model_name: str) -> Path:
             shutil.rmtree(model_dir)
         raise e
 
-
 @app.get("/")
 async def root():
     """Root endpoint returning API information"""

@@ -4,5 +4,4 @@ scipy
 fuzzywuzzy
 python-dotenv
 pycountry
-openai
 langgraph

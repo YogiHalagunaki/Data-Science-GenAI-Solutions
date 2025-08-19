@@ -166,7 +166,7 @@ async def main():
         index = await rag.process_document(pdf_path)
         
         question = """
-        Existence   definition:
+        Existence definition:
         Determines whether or not the control is in place, regardless of the proportion of devices or the quality of the control. \n
         for for given question related to control \n
 
