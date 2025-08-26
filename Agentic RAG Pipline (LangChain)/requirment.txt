@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+langchain
+faiss-cpu
+langchain-community
+python-dotenv

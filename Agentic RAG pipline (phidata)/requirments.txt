@@ -1,0 +1,14 @@
+loguru
+phidata
+lancedb
+pydantic
+openai
+azure-ai-openai
+boto3
+anthropic
+pillow
+opencv-python
+pytesseract
+python-docx
+pdfplumber
+PyPDF2

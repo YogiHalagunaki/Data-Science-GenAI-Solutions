@@ -10,6 +10,7 @@ from phi.knowledge.document import DocumentKnowledgeBase
 from phi.embedder.azure_openai import AzureOpenAIEmbedder
 from phi.document.chunking.agentic import AgenticChunking
 from phi.document.chunking.document import DocumentChunking
+from sklearn.metrics.pairwise import cosine_similarity
 
 from dotenv import load_dotenv
 load_dotenv()

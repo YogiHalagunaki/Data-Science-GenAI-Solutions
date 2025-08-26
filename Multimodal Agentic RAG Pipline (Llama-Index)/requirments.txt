@@ -1,0 +1,25 @@
+# Core
+torch>=2.0.0
+asyncio    # comes with Python, can omit if not required
+tempfile   # comes with Python, no pip install needed
+
+# Image handling
+Pillow>=10.0.0
+pdf2image>=1.16.3
+
+# Concurrency
+# ThreadPoolExecutor is built into Python (no package needed)
+
+# ColPali (custom repo, may require installation from GitHub if not on PyPI)
+colpali-engine
+
+# LlamaIndex ecosystem
+llama-index-core>=0.10.0
+llama-index-embeddings-huggingface>=0.1.0
+llama-index-multi-modal-llms-gemini>=0.1.0
+
+# Environment handling
+python-dotenv>=1.0.0
+
+# Logging
+loguru>=0.7.0
