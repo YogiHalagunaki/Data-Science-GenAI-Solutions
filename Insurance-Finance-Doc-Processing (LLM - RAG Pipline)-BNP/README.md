@@ -163,7 +163,7 @@ This generates:
   ]
 }
 ```
-![Validation Excel Screenshot](/media/yogi/WORK_SPACE/Git Codes /Data-Science-GenAI-Solutions/Insurance-Finance-Doc-Processing (LLM - RAG Pipline)-BNP/Pasted image.png)
+![Validation Excel Screenshot](Pasted image.png)
 
 ---
 
