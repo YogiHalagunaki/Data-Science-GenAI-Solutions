@@ -1,6 +1,6 @@
 # 📄 Finance Document Processing using LLM and RAG Agent Pipline 
 
-This project extracts structured **bond trade data** from financial documents (PDF term sheets, etc.) using a combination of **OCR + RAG (Retrieval-Augmented Generation)**.  
+This project extracts structured **bond trade data** from financial documents (PDF term sheets, etc.) using a combination of **OCR + RAG (Retrieval-Augmented Generation)** and Added API layer with **FastAPI**.  .  
 It validates extracted results against ground truth and generates a color-coded **Excel validation report**.  
 
 ---
@@ -83,7 +83,7 @@ This will:
 - OCR the document  
 - Store embeddings in LanceDB  
 - Generate JSON output following the `Trade` Pydantic schema  
-
+- Added API layer with **FastAPI**.  
 ---
 
 ### 🔹 3. Validate Extracted Results
@@ -172,7 +172,6 @@ This generates:
 - Support **multi-trade documents** (batch extraction).  
 - Extend schema for **insurance & other financial contracts**.  
 - Integrate storage with **MongoDB & S3**.  
-- Add API layer with **FastAPI**.  
 
 ---
 
