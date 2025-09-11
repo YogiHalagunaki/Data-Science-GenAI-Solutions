@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: insurance-finance-doc-processing-api
+spec:
+  selector:
+    app: insurance-finance-doc-processing-api
+  ports:
+  - protocol: TCP 
+    port: 80
+    targetPort: 8080
+  type: ClusterIP
+  
