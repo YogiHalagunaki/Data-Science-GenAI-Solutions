@@ -91,7 +91,7 @@ PORT=8000
 4. Run the ingestion script:
 
 ```bash
-python scripts/ingest_data.py
+(venv) python3 scripts/ingest_data.py
 ```
 
 This creates `database.db` with tables named after the CSV files.
@@ -103,10 +103,10 @@ This creates `database.db` with tables named after the CSV files.
 Start the FastAPI server:
 
 ```bash
-uvicorn app.run:app --reload
+(venv) uvicorn app.run:app --reload
 or 
 
-python3 app/run.py   
+(venv) python3 app/run.py   
 ```
 
 The server will be available at:
@@ -167,10 +167,17 @@ curl -X POST http://127.0.0.1:8000/Text_to_SQL/query \
 
 Run tests with:
 
-```bash
-pytest -v
-```
+#### 1. Create a virtual environment
+```bash 
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
+```
+#### 2. run test file
+```bash 
+(venv) python3 /Text_to_SQL_FastAPI_PoC/test/test_api_endpoints.py 
+
+```
 ---
 
 ## Notes
