@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Text-to-SQL-FastAPI-PoC-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Text-to-SQL-FastAPI-PoC-api
+  template:
+    metadata:
+      labels:
+        app: Text-to-SQL-FastAPI-PoC-api # Label for the pods and deployments
+    spec:
+      securityContext:
+          runAsUser: 1000
+          runAsGroup: 3000
+          fsGroup: 3000
+          seccompProfile:
+            type: RuntimeDefault
+      automountServiceAccountToken: false 
+      volumes:
+      - name: volume
+        securityContext:
+          readOnlyRootFilesystem: true
+          # readOnlyFilesystem: true
+          runAsNonRoot: true         
+          allowPrivilegeEscalation: false
+          capabilities:
+            add: ["SYSLOG", "NET_RAW", "SETPCAP"]
+            drop: ["ALL"] 
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8080  # API will listen to this port
+        resources:
+          requests: # Minimum resources required
+            cpu: "0.3"
+            memory: "1Gi"
+          limits: # Maximum resources allocated
+            cpu: "2"
+            memory: "4Gi"
+        volumeMounts:
+            name: volume
+        env:
+          - name: API_VERSION
+            value: "2023-03-15-preview"
+          - name: BR_BEDROCK_WRAPPER_URL
+            value: "http://Text-to-SQL-FastAPI-PoC-api/llmbedrock"
+          - name: CHUNK_SIZE
+            value: "10000"
+          - name: EMB_ENGINE
+            value: "text-embedding-ada-002"
+          - name : EMB_MODEL_NAME
+            value : "text-embedding-ada-002"
+          - name: INPUT_TOKENS
+            value: "100000"
+          - name: IS_EMB_REQ
+            value: "False"
+          - name: IS_FAISS_REQ
+            value: "False"
+          - name: OVER_LAP
+            value: "100"
+          - name : PROMP_MULTIPLY_NO
+            value : "3"
+          - name: PROMPT_COMMAN_TEXT
+            value: "Also provide the exact reference text that contains just the extracted text information, not the entire sentence, formatted as JSON with each field sould include a response field for the extracted answer and a reference field for the specific text where the extracted text is mentioned.#The LLM provided response should be presented in JSON format with each field containing both a \"response\" and \"reference\". The \"response\" should be the generated value based on the given fields or question, while the \"reference\" should contain the exact original input or context from which the value is derived."
+          - name: TEMPERATURE
+            value: "0.1"
+          - name: TEXT_CHUNK_SIZE
+            value: "10000"
+          - name: CLIENT_ID_AKS
+            value: "#{CLIENT_ID_AKS}#"              
+      restartPolicy: Always
+      

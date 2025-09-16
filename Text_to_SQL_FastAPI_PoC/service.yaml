@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Text-to-SQL-FastAPI-PoC-api
+spec:
+  selector:
+    app: Text-to-SQL-FastAPI-PoC-api
+  ports:
+  - protocol: TCP 
+    port: 80
+    targetPort: 8080
+  type: ClusterIP
+  
