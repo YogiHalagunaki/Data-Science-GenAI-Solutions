@@ -105,7 +105,6 @@ Start the FastAPI server:
 ```bash
 (venv) uvicorn app.run:app --reload
 or 
-
 (venv) python3 app/run.py   
 ```
 
@@ -173,7 +172,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 ```
-#### 2. run test file
+#### 2. Run Test File
 ```bash 
 (venv) python3 /Text_to_SQL_FastAPI_PoC/test/test_api_endpoints.py 
 
