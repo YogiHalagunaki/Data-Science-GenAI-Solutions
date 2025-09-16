@@ -1,4 +1,4 @@
-# Text-to-SQL FastAPI Project
+# Text-to-SQL FastAPI PoC
 
 This project implements a **Text-to-SQL API** using **FastAPI**. It allows you to ask questions in **natural language** and get answers from a SQLite database populated with CSV data.
 
@@ -19,21 +19,29 @@ This project implements a **Text-to-SQL API** using **FastAPI**. It allows you t
 ## Project Structure
 
 ```
-text_to_sql_fastapi/
-├── README.md
-├── requirements.txt
-├── .env.example
-├── data/                 # put provided CSVs here (not included)
+Text_to_SQL_FastAPI_PoC/
+├── README.md                       # API blue print
+├── start-server.sh                 # Fast API server starts on this script
+├── requirements.txt                # API requirments as per requirment
+├── Dockerfile                      # TO create docker container to run API on EKS/AKS
+├── .env                            # required env var to run the Fast API locally
+├── data/                           # put provided CSVs here (not included)
 ├── scripts/
-│   └── ingest_data.py    # loads CSVs into SQLite
+│   └── ingest_data.py              # loads CSVs into SQLite
 ├── app/
-│   ├── main.py           # FastAPI app
-│   ├── db.py             # SQLite connection and schema code
-│   ├── nl2sql.py         # NL -> SQL component
-│   ├── sql_exec.py       # executes SQL queries
-│   └── summarize.py      # converts SQL result -> NL
-└── tests/
-    └── test_endpoints.py # pytest test cases
+|   ├── run.py                      # run the server of FastAPI app
+│   ├── views.py                    # FastAPI app: API entry point
+├── app/codes/
+│   ├── nl_to_sql.py                # NL -> SQL component
+│   ├── sql_execute.py              # executes SQL queries
+│   └── sql_to_nl_summarize.py      # converts SQL result -> NL
+├── app/utils/
+│   ├── db_connect.py               # SQLite connection and schema code
+|   ├── config.py                   # API config var 
+|   ├── custom_logger.py            # user defined logging module
+|   ├── fileconstant.py             # const. store or usefull abrivation
+└── test/
+    └── test_api_endpoints.py       # pytest test cases, to test the Fast API.
 ```
 
 ---
@@ -73,7 +81,7 @@ cp .env.example .env
 Edit `.env`:
 
 ```env
-DB_PATH=./database.db
+DB_PATH=./database.db # add absulate path of your database
 OPENAI_API_KEY=your_openai_api_key_here  # optional
 HOST=127.0.0.1
 PORT=8000
@@ -95,26 +103,29 @@ This creates `database.db` with tables named after the CSV files.
 Start the FastAPI server:
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.run:app --reload
+or 
+
+python3 app/run.py   
 ```
 
 The server will be available at:
 
-* Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-* ReDoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+* Swagger UI: [http://127.0.0.1:8000/Text_to_SQL/schema](http://127.0.0.1:8000/docs)
+* ReDoc: [http://127.0.0.1:8000/Text_to_SQL/query](http://127.0.0.1:8000/redoc)
 
 ---
 
 ## API Endpoints
 
-### `GET /schema`
+### `GET /Text_to_SQL/schema`
 
 Returns the database schema (tables and columns).
 
 **Example:**
 
 ```bash
-curl http://127.0.0.1:8000/schema
+curl http://127.0.0.1:8000//Text_to_SQL/schema
 ```
 
 Response:
@@ -127,14 +138,14 @@ Response:
 }
 ```
 
-### `POST /query`
+### `POST /Text_to_SQL/query`
 
 Accepts a natural language question and returns SQL, answer, and sample rows.
 
 **Request:**
 
 ```bash
-curl -X POST http://127.0.0.1:8000/query \
+curl -X POST http://127.0.0.1:8000/Text_to_SQL/query \
      -H "Content-Type: application/json" \
      -d '{"question": "How many employees are there?"}'
 ```
@@ -175,3 +186,11 @@ pytest -v
 * Expand NL → SQL patterns for more complex queries.
 * Add CI/CD pipeline with GitHub Actions.
 * Support more databases (Postgres, MySQL).
+
+---
+## 🙋 Author
+
+**Yogi Halagunaki**  
+GitHub: [@YogiHalagunaki](https://github.com/YogiHalagunaki)  
+Email: halagunakiyogi@gmil.com  
+Location: Pune, India 
