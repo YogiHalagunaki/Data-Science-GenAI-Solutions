@@ -125,7 +125,7 @@ Returns the database schema (tables and columns).
 **Example:**
 
 ```bash
-curl http://127.0.0.1:8000//Text_to_SQL/schema
+curl http://127.0.0.1:8000/Text_to_SQL/schema
 ```
 
 Response:
