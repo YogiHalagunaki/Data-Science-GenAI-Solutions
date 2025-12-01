@@ -11,7 +11,7 @@ AZURE_OPENAI_API_KEY = ""
 
 model = AzureChatOpenAI( azure_deployment="gpt-4-omni",  
                         api_version="2024-12-01-preview",
-                        temperature=0 
+                        temperature=5 
                         )
 
 # Create specialized agents

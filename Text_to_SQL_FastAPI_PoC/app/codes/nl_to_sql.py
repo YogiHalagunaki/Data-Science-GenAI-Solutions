@@ -60,7 +60,7 @@ def openai_generate(question: str) -> str:
         engine="text-davinci-003",
         prompt=prompt,
         max_tokens=150,
-        temperature=0
+        temperature=5
     )
     sql_query = response.choices[0].text.strip()
     return sql_query
